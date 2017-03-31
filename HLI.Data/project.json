@@ -6,7 +6,7 @@
     ]
   },
   // Replacement tokens not supported
-  "version": "1.0.5.0",
+  "version": "1.0.5.1",
   "name": "HLI.Data",
   "title": "HLI.Data",
   "description": "Create instance of HliHttpClient and make typed calls:\nvar client = new HliHttpClient(\"http://httpbin.org/\", \"ip\");\nvar result = await client.GetDataAsTypeAsync&lt;IpResponse&gt;();\nThere is also an IRepository interface and subinterfaces for your repositories.",
