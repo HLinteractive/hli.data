@@ -1,0 +1,22 @@
+{
+  "version": 2,
+  "exports": {
+    "HLI.Data/1.0.0": {
+      "type": "project",
+      "framework": ".NETFramework,Version=v4.5",
+      "compile": {
+        "bin/Debug/HLI.Data.dll": {}
+      },
+      "runtime": {
+        "bin/Debug/HLI.Data.dll": {}
+      },
+      "contentFiles": {
+        "bin/Debug/HLI.Data.pdb": {
+          "buildAction": "None",
+          "codeLanguage": "any",
+          "copyToOutput": true
+        }
+      }
+    }
+  }
+}
