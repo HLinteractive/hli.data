@@ -1,85 +1,35 @@
 {
-  "version": "1.0.0-*",
+    "dependencies": {
+    "Newtonsoft.Json": "10.0.1",
+    "HLI.Core": "1.0.5.1",
+    "Microsoft.Net.Http": "2.2.29",
+    "dotnet-test-nunit": "3.4.0-beta-3",
+    "NUnit": "3.6.1"
+  },
 
   "frameworks": {
-    // Portable
-    ".NETPortable,Version=v4.5,Profile=Profile111": {
-      "buildOptions": {
-        "define": [ "PORTABLE" ],
-        "warningsAsErrors": false
-      },
-      "frameworkAssemblies": {
-        "Microsoft.CSharp": "",
-        "System.Collections": "",
-        "System": "",
-        "System.Core": "",
-        "System.ComponentModel": "",
-        "System.IO": "",
-        "System.Linq.Expressions": "",
-        "System.Numerics": "",
-        "System.Resources.ResourceManager": "",
-        "System.Runtime": "",
-        "System.Runtime.Extensions": "",
-        "System.Runtime.Serialization": "",
-        "System.Runtime.Serialization.Primitives": "",
-        "System.Xml": "",
-        "System.Xml.Linq": ""
-      },
-      "dependencies": {
-        "HLI.Data": {
-          "target": "project"
-        }
-      }
-    },
-    // ".Net 4.5"
-    "net45": {
-      "frameworkAssemblies": {
-      },
-      "dependencies": {
-        "HLI.Data": {
-          "target": "project"
-        }
-      }
-    },
-    // ".Net 4.6"
     "net46": {
       "frameworkAssemblies": {
+      "System.Threading.Tasks": "" 
       },
       "dependencies": {
-        "HLI.Data": {
-          "target": "project"
-        }
-      }
-    },
-    //"netstandard1.4":
-    ".NETStandard,Version=v1.4": {
-      "imports": "portable-net45+win8+wpa81",
-      "buildOptions": {
-        "warningsAsErrors": false,
-        "define": [
-          "NETSTANDARD1_4"
-        ]
-      },
-      "dependencies": {
-        "Microsoft.CSharp": "4.3.0",
-        "NETStandard.Library": "1.6.1",
-        "System.Runtime.Serialization.Primitives": "4.3.0",
-        "System.Collections": "4.3.0",
-        "System.ComponentModel": "4.3.0",
-        "System.Diagnostics.Debug": "4.3.0",
-        "System.Dynamic.Runtime": "4.3.0",
-        "System.Globalization": "4.3.0",
-        "System.IO": "4.3.0",
-        "System.Linq": "4.3.0",
         "HLI.Data": {
           "target": "project"
         }
       }
     }
   },
-  "dependencies": {
-    "Newtonsoft.Json": "10.0.1",
-    "HLI.Core": "1.0.5.1",
-    "Microsoft.Net.Http": "2.2.29"
-  }
+
+  "netcoreapp1.0": {
+    "imports": "portable-net45+win8",
+    "dependencies": {
+      "Microsoft.NETCore.App": {
+        "version": "1.0.0-*",
+        "type": "platform"
+      },
+      "System.Threading.Tasks": ""
+    }
+  },
+  "testRunner": "nunit",
+  "version": "1.0.0-*"
 }
